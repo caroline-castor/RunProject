@@ -1,0 +1,14 @@
+
+<h2>Usuário logado: 
+    <?php 
+        //pega atr do usuario
+        echo $this->usuario->_name; 
+    ?>
+</h2>
+<p>
+    <a href="
+        <?php echo $this->url(array('controller' => 'auth', 'action' => 'logout'), null, true); 
+        ?>
+       ">Efetuar logout
+    </a>
+</p>
